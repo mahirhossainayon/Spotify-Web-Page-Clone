@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="sidebar">
+        <div class="nav">
+          <div class="nav-option" style="opacity: 1" ;>
+            <i class="fa-solid fa-house"></i>
+            <a href="#">Home</a>
+          </div>
+          <div class="nav-option">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <a href="#">Search</a>
+          </div>
+        </div>
+        <div class="library">
+          <div class="options">
+            <div class="lib-option nav-option">
+              <img src="library_icon.png" alt="lib" />
+              <a href="#">Your library</a>
+            </div>
+            <div class="icons nav-option">
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </div>
+          <div class="lib-box">
+            <div class="box">
+              <p class="box-p1">Create Your First Playlist</p>
+              <p class="box-p2">It's easy,we'll help you</p>
+              <button class="badge">Create Playlist</button>
+            </div>
+            <div class="box">
+              <p class="box-p1">Lets find some podcasts to follow</p>
+              <p class="box-p2">We'll keep you updated</p>
+              <button class="badge">Browse Podcast</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="stickynav">
+          <div class="sticky-nav-icons">
+            <img src="backward_icon.png" alt="back" />
+            <img src="forward_icon.png" alt="forward" class="hide" />
+            <div class="med">
+              <div class="nav-option" style="opacity: 1" ;>
+                <i class="fa-solid fa-house"></i>
+              </div>
+              <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+          </div>
+          <div class="sticky-nav-opt">
+            <button class="badge hide">Explore Premium</button>
+            <button class="badge dark-batch">
+              <i class="fa-solid fa-circle-arrow-down"></i>Install App
+            </button>
+            <i class="fa-regular fa-user"></i>
+          </div>
+        </div>
+
+        <h2>Recently Played</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="card1img.jpeg" alt="card1" />
+            <p class="card-title">Porichoy</p>
+            <p class="card-info">Shey Ke | Topu | Bangla Songs </p>
+          </div>
+        </div>
+        <h2>Tranding Now Near You</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="card2img.jpeg" alt="card1" />
+            <p class="card-title">Indalo - 1996</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+          <div class="card">
+            <img src="card3img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+
+          <div class="card">
+            <img src="card4img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Bangladesh</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+
+          <div class="card">
+            <img src="card5img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+
+          <div class="card">
+            <img src="card6img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+        </div>
+        <h2>Freature Charts</h2>
+        <div class="cards-container">
+          <div class="card">
+            <img src="card6img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+          <div class="card">
+            <img src="card5img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+          <div class="card">
+            <img src="card3img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+          <div class="card">
+            <img src="card1img.jpeg" alt="card1" />
+            <p class="card-title">Top 50-Global</p>
+            <p class="card-info">Your daily updates of the most ...</p>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="album">
+          <div id="albumimg">
+            <img
+              src="card1img.jpeg"
+              alt="playingsongimg"
+              height="55px"
+              width="55px"
+              style="border-radius: 10px"
+            />
+          </div>
+
+          <div>
+            <p style="font-weight: 100; scale: 0.8">
+              <b>Shey Ke</b> <br />Topu
+            </p>
+          </div>
+          <div>
+            <img src="album_icon1.png" alt="likelogo" class="player-icon" />
+          </div>
+        </div>
+        <div class="player">
+          <div class="player-control">
+            <img
+              src="player_icon1.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+            <img
+              src="player_icon2.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+            <button
+              id="btn01"
+              style="background-color: #000000ee; border: none"
+            >
+              <img
+                src="player_icon3.png"
+                alt="icon"
+                class="player-control-icon"
+                style="height: 2rem"
+              />
+              <audio
+                src="Porichoy   Full Audio Song  Prajna  Rockrulz Independent Music records.mp3"
+                style="display: none"
+                id="audio"
+              ></audio>
+            </button>
+            <img
+              src="player_icon4.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+            <img
+              src="player_icon5.png"
+              alt="icon"
+              class="player-control-icon"
+            />
+          </div>
+          <div class="playback-bar">
+            <span class="curr-time" style="scale: 0.7"> 00.00 </span>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="5"
+              class="progress-bar"
+            />
+            <span class="tot-time" style="scale: 0.7"> 3.36</span>
+          </div>
+        </div>
+        <div class="control">
+          <div class="player-icon">
+            <img src="controld_icon2.png" alt="con2" />
+          </div>
+          <div class="player-icon">
+            <img src="controls_icon3.png" alt="con3" />
+          </div>
+          <div class="player-icon">
+            <img src="controls_icon4.png" alt="con4" />
+          </div>
+          <div style="display: flex; align-items: center">
+            <label for="vol"></label>
+            <img
+              src="controls_icon5.png"
+              alt="con5"
+              height="20px"
+              id="volicon"
+              style="height: fit-content"
+            />
+            <input
+              type="range"
+              max="100"
+              min="0"
+              class="vol"
+              id="vol"
+              style="scale: 0.7"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
